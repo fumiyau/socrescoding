@@ -1,0 +1,51 @@
+gen father1 = 0
+recode father1 0=1 if zq13_2h == 1
+gen father2 = 0
+recode father2 0=1 if (aq11_21a == 7 | aq11_22a == 7 | aq11_23a == 7 | aq11_24a == 7 | aq11_25a == 7 | aq11_26a == 7 | aq11_27a == 7 | aq11_28a == 7 )
+gen father3 = 0
+recode father3 0=1 if (bq13_2bz == 7 | bq13_2cz == 7 | bq13_2dz == 7 | bq13_2ez == 7 | bq13_2fz == 7 | bq13_2gz == 7 | bq13_2hz == 7 | bq13_2iz == 7  )
+gen father4 = 0
+recode father4 0=1 if (cq17bz == 7 | cq17cz == 7 | cq17dz == 7 | cq17ez == 7 | cq17fz == 7 | cq17gz == 7 | cq17hz == 7 | cq17iz == 7 ) 
+gen father5 = 0
+recode father5 0=1 if (dq10_22z == 7 | dq10_23z == 7 | dq10_24z == 7 | dq10_25z == 7 | dq10_26z == 7 | dq10_27z == 7 | dq10_28z == 7 | dq10_29z == 7 | dq10_210z == 7)
+gen father6 = 0
+recode father6 0=1 if eq12_h == 1
+
+gen mother1 = 0
+recode mother1 0=1 if zq13_2i == 1
+gen mother2 = 0
+recode mother2 0=1 if (aq11_21a == 8 | aq11_22a == 8 | aq11_23a == 8 | aq11_24a == 8 | aq11_25a == 8 | aq11_26a == 8 | aq11_27a == 8 | aq11_28a == 8 )
+gen mother3 = 0
+recode mother3 0=1 if (bq13_2bz == 8 | bq13_2cz == 8 | bq13_2dz == 8 | bq13_2ez == 8 | bq13_2fz == 8 | bq13_2gz == 8 | bq13_2hz == 8 | bq13_2iz == 8  )
+gen mother4 = 0
+recode mother4 0=1 if (cq17bz == 8 | cq17cz == 8 | cq17dz == 8 | cq17ez == 8 | cq17fz == 8 | cq17gz == 8 | cq17hz == 8 | cq17iz == 8 ) 
+gen mother5 = 0
+recode mother5 0=1 if (dq10_22z == 8 | dq10_23z == 8 | dq10_24z == 8 | dq10_25z == 8 | dq10_26z == 8 | dq10_27z == 8 | dq10_28z == 8 | dq10_29z == 8 | dq10_210z == 8)
+gen mother6 = 0
+recode mother6 0=1 if eq12_i == 1
+
+gen spfather1 = 0
+recode spfather1 0=1 if zq13_2j == 1
+gen spfather2 = 0
+recode spfather2 0=1 if (aq11_21a == 9 | aq11_22a == 9 | aq11_23a == 9 | aq11_24a == 9 | aq11_25a == 9 | aq11_26a == 9 | aq11_27a == 9 | aq11_28a == 9 )
+gen spfather3 = 0
+recode spfather3 0=1 if (bq13_2bz == 9 | bq13_2cz == 9 | bq13_2dz == 9 | bq13_2ez == 9 | bq13_2fz == 9 | bq13_2gz == 9 | bq13_2hz == 9 | bq13_2iz == 9  )
+gen spfather4 = 0
+recode spfather4 0=1 if (cq17bz == 9 | cq17cz == 9 | cq17dz == 9 | cq17ez == 9 | cq17fz == 9 | cq17gz == 9 | cq17hz == 9 | cq17iz == 9 ) 
+gen spfather5 = 0
+recode spfather5 0=1 if (dq10_22z == 9 | dq10_23z == 9 | dq10_24z == 9 | dq10_25z == 9 | dq10_26z == 9 | dq10_27z == 9 | dq10_28z == 9 | dq10_29z == 9 | dq10_210z == 9)
+gen spfather6 = 0
+recode spfather6 0=1 if eq12_j == 1
+
+gen spmother1 = 0
+recode spmother1 0=1 if zq13_2k == 1
+gen spmother2 = 0
+recode spmother2 0=1 if (aq11_21a == 10 | aq11_22a == 10 | aq11_23a == 10 | aq11_24a == 10 | aq11_25a == 10 | aq11_26a == 10 | aq11_27a == 10 | aq11_28a == 10 )
+gen spmother3 = 0
+recode spmother3 0=1 if (bq13_2bz == 10 | bq13_2cz == 10 | bq13_2dz == 10 | bq13_2ez == 10 | bq13_2fz == 10 | bq13_2gz == 10 | bq13_2hz == 10 | bq13_2iz == 10  )
+gen spmother4 = 0
+recode spmother4 0=1 if (cq17bz == 10 | cq17cz == 10 | cq17dz == 10 | cq17ez == 10 | cq17fz == 10 | cq17gz == 10 | cq17hz == 10 | cq17iz == 10 ) 
+gen spmother5 = 0
+recode spmother5 0=1 if (dq10_22z == 10 | dq10_23z == 10 | dq10_24z == 10 | dq10_25z == 10 | dq10_26z == 10 | dq10_27z == 10 | dq10_28z == 10 | dq10_29z == 10 | dq10_210z == 10)
+gen spmother6 = 0
+recode spmother6 0=1 if eq12_k == 1
